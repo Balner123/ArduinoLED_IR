@@ -1,18 +1,17 @@
 #include <Arduino.h>
 #include <IRremote.hpp>
-#define IR_USE_AVR_TIMER 1
+#define IR_USE_AVR_TIMER1
 #define IR_RECEIVE_PIN 12
 #define MINUS 8
 
-
-String nazvy[] = {"RED","BLUE","GREEN"};
+String nazvy[] = {"RED","GREEN","BLUE"};
 
 int count = 3;
 
-int leds[] = {9, 10, 11};
+int leds[] = {9, 10,5};
 
 unsigned long pole[] = {
-    3910598400,
+    3910598400,         
     4077715200,
     3877175040,
     2707357440,
